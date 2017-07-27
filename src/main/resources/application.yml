@@ -1,9 +1,20 @@
-spring:
+spirng:
   jpa:
     hibernate:
       ddl-auto: create
 
+taller:
+  spring:
+    ua:
+      aulas:
+        - "L26"
+        - "L27"
 server:
   error:
     whitelabel:
       enabled: false
+security:
+  user:
+    password: pass
+    name: user
+

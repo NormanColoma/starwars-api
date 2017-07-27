@@ -1,8 +1,6 @@
 package com.starwars.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -15,10 +13,8 @@ import javax.persistence.Id;
 import java.time.LocalDateTime;
 
 @Entity
-@EntityListeners({AuditingEntityListener.class})
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
+@EntityListeners({AuditingEntityListener.class})
 public class Planet extends ResourceSupport{
     @Id
     @GeneratedValue
